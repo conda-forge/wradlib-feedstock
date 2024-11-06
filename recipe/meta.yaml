@@ -31,13 +31,13 @@ requirements:
     - h5netcdf
     - netcdf4
     - gdal
-    - xarray <=2024.9.0
+    - xarray >=2024.10.0
     - cartopy
     - packaging
     - pyproj
     - xmltodict
     - requests
-    - xradar >=0.4.0,<=0.7.0
+    - xradar >=0.8.0
 
 test:
   imports:

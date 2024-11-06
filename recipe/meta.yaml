@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: wradlib
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-  sha256: ab8162de5dfdc146203d6f2a4f0e776e628125757c6d940758e85e098604982f
+  sha256: c609266edb7beae4ef7d315b119863bf66d94dce2533f62a321d7307773a5797
 
 build:
   number: 0
@@ -31,13 +31,13 @@ requirements:
     - h5netcdf
     - netcdf4
     - gdal
-    - xarray <=2024.9.0
+    - xarray >=2024.10.0
     - cartopy
     - packaging
     - pyproj
     - xmltodict
     - requests
-    - xradar >=0.4.0,<=0.7.0
+    - xradar >=0.8.0
 
 test:
   imports:

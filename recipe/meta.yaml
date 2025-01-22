@@ -9,20 +9,20 @@ source:
   sha256: 5ff5f7bdb03e61f4e783d2b00fe3444d6c357e7cad375211528370947b971e23
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
     - hatch-fancy-pypi-readme
     - hatch-requirements-txt
   run:
-    - python >=3
+    - python >={{ python_min }}
     - deprecation
     - numpy
     - scipy
@@ -40,6 +40,8 @@ requirements:
     - xradar >=0.8.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - wradlib  # [not osx]
   commands:

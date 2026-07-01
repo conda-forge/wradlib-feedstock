@@ -1,4 +1,4 @@
-{% set version = "2.9.3" %}
+{% set version = "2.9.4" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/w/wradlib/wradlib-{{ version }}.tar.gz
-  sha256: c1616963a48ed131d47e0f4863aeb68a5ccefba85ea09eead49981666632601e
+  sha256: f454cc1f3033de9d01de624b80839f88c3d9612058dd5f58fe685f146fb70e27
 
 build:
   number: 0
